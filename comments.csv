@@ -1,0 +1,559 @@
+topic,date,userid,post
+type of bearing failure.,2019-08-15T20:53:31,BFRAN21,"this bearing came out of a belt drive toyo pump. vibrations were showing BSF with sidebands of FTF, gSE spectrum shows it the best. I was hesitant to make the call for this reason since it wasn't showing to much in the velocity spectrums. not sure if it was to early to make the call or not? would this be an example of bearing skewing or smearing?"
+type of bearing failure.,2019-08-18T11:42:18,DAVE REYNOLDS,"Contaminants in the lubrication is my 2 cents
+https://www.schaeffler.com/rem...g_failures_us_en.pdf
+Dave"
+type of bearing failure.,2019-08-22T14:57:40,AZIZ58,"bfran21 posted:
+this bearing came out of a belt drive toyo pump. vibrations were showing BSF with sidebands of FTF, gSE spectrum shows it the best. I was hesitant to make the call for this reason since it wasn't showing to much in the velocity spectrums. not sure if it was to early to make the call or not? would this be an example of bearing skewing or smearing?
+This sign of smearing 
+According to iso 15243 resulting by poor lubrication and light load"
+Bearing current damage on NDE bearing due to bearing current,2016-07-08T09:15:25,ABHI03,"Dear Friends,
+We have one case where for Mill motors in Sugar industry, the bearings are repeatedly failing due to bearing current (Fluting Marks). The NDE side bearing is a insulated bearing though. After last failure incident we have changed the bearings (DE non insulated and NDE insulated). We have also installed Carbon/Grounding brush on DE shaft end out side the end cover. Also the earthing is checked. However again in this season only after operating for 4 months bearings have failed. 
+Can you guide me for identifying reason behind and with corrective actions.
+Thanks and regards
+Abhijit"
+Bearing current damage on NDE bearing due to bearing current,2016-07-11T15:52:54,WHITE WALKER,would u please post the spectrum.how current passes to shaft and bearing and how to avoid it.firsttime i seeing this problem.
+Bearing current damage on NDE bearing due to bearing current,2016-08-29T22:29:47,"""CHUCK BLACKETT""","When ever I have experienced bearings failing from current, the first thing I do is upgrade to ceramic rolling elements in the bearing if possible. It is a no hassle sure fix in most applications, and usually for a cost not that significantly higher than complete steel bearings. Bonus, the hybrid steel and ceramic bearing will also have a longer running life. I have never had luck with shaft grounding brushes. Do you have photos of the bearing races, are you sure it is current damage?"
+Bearing current damage on NDE bearing due to bearing current,2016-09-01T07:51:11,DBTCMP,"Consider a Conductive Grease such as Kluber electric which has graphite in the grease and allows the current go to ground safely http://www.vibescorp.ca/pdf/Kl...ric_BE_44_152-en.pdf
+You may also find the following interesting.
+http://ecmweb.com/motors/diagn...tor-bearing-currents"
+Bearing current damage on NDE bearing due to bearing current,2016-09-01T11:06:12,ABHI03,Thank you Chuck. We are looking for a solution with current bearings. 
+Bearing current damage on NDE bearing due to bearing current,2016-09-01T11:07:30,ABHI03,"Thaank you..
+ "
+Bearing current damage on NDE bearing due to bearing current,2016-09-09T18:52:10,"""CHUCK BLACKETT""","Hi ABHI03,
+Sorry for the delay - I was traveling. It is quite clear that the bearing is having an issue with current arcing from that photo. I would go for the grease, or better the ceramic rolling element bearings. The pump OEM that I use to work for switched over to ceramic rolling elements as standard considering the move by the industry to favor VFD solutions. The use of a VFD can increase stray currents and cause problems that otherwise would not have existed. "
+Bearing current damage on NDE bearing due to bearing current,2016-09-20T12:56:56,ABHI03,"Thansk Chuck..
+ "
+Bearing current damage on NDE bearing due to bearing current,2016-09-26T18:41:44,SOUNDHOUND,I'd like to add that it's important to make sure when insulating both motor bearings that the driven equipment is insulated from motor. Our company had an instance where preventing another $2K motor rebuild caused a $30K gearbox rebuild because coupling was a metal grid and current went to gearbox bearings.
+Bearing current damage on NDE bearing due to bearing current,2016-09-30T15:53:09,DAVE REYNOLDS,"I too would like to add some additional experience....Motor 450HP 900RPM 480Volt 3 phase with insulated shafts on both ends, intermittent duty, megged over 1000megs between bare shaft and insulating material on both ends, shaft grounding ring, both bearings have oil not grease and still have electrical fluting. The suspected root cause is the cables from the VFD to the motor not having proper shielding. Had over 300 volts from the rotating shaft to ground!
+Best to measure/test to better determine where the fault lies and put a plan in place once the faults have been determined/verified. Could also be inductance from cables lying next to one another in a cable tray, earth ground is weak or broken, rust/dirt between machine and foundation not allowing a good ground to name a few I have ran across in the past
+Dave"
+Bearing current damage on NDE bearing due to bearing current,2016-09-30T17:17:07,SOUNDHOUND,Good point. We experienced fluting to varying degrees on 9 75hp Extruder motors. Installed a couple of ground rings and then had a rep from ring manufacturer test our motors and he showed we still had problem due to bad ground. Inspection found some ground lugs weren't tight but after fix we still had shaft voltages so all motors got rings. I check voltage levels every 3 months and shafts have to be cleaned regularly due to dirty environment. 1 motor has ring mounted internally but I worry about grease pushing past bearing onto ring.
+Bearing current damage on NDE bearing due to bearing current,2019-08-19T18:53:05,SAM THE GROUNDING MAN,"First time on this blog and I see these postings are a few years old, but here goes it anyway:
+I reviewed the pictures and agree you are experiencing electrically induced bearing failure.  Incidence rates of bearing failure on VFD motors is at least 60% by 2 years and only continues to climb from there.  It is a well-accepted and pervasive problem that particularly plagues operations that run 24/7.  The following information is based on long-term field and lab studies over 30 years.
+1) Capacitive discharge through the bearing is a local event caused by the VFD gated mechanism switching on and off.   VFD brands, altering the carrier frequency, installing induction absorbers on the wiring, shunts, conductive grease, etc. are not a fix for this phenomenon.  A shaft grounding device is the only known way to economically eliminate capacitive discharge through the bearing.
+2)  Circulating currents can be present on larger framed motors and are inherent to the motor.  This is different than capacitive coupling as described above under #1.  Our field research has shown that motors 100-200hp and with rpm <=1200 or motors >=200hp regardless of rpm are susceptible to circulating currents.  Incident rates of circulating currents being present is 25-35% for the motor parameters described above.  Insulated bearings will not take care of circulating currents as the current will find a parallel pathway and take out bearings in connected equipment.  A typical set-up to deal with circulating currents is to either provide shaft grounding on both ends of the motor or use an insulated bearing on the non-drive end and a drive end shaft grounding system to break the current loop.
+3)  Not all shaft grounding devices are equal.  It is certainly confusing with the different available products on the market.   The following are key principals that cannot be ignored while researching shaft grounding products.  Always have these concepts and questions at the forefront of your mind when researching shaft grounding options:
+The grounding system MUST be a better competitor to the bearing for grounding the voltage/current away from the bearing.  While most shaft grounding systems lower shaft voltages right out of the box, not all shaft grounding systems lower voltages below the threshold to prevent current flow through the dielectric (bearing grease) then onto the bearing.  Moreover, most shaft grounding systems cannot maintain for the long-term voltages below the known threshold.  One major manufacturer of shaft grounding rings (SGRs) was asked the question during a webinar ""how do you know the grounding system is working?"" and their response was if the shaft voltage readings are below 10v, then the grounding system is working.  Problem with that response is shaft voltages needs to be much lower than 10v to prevent breakover through the bearing grease.  While 10v will certainly slow down electrically induced bearing damage, it will not eliminate the problem.  We've extensively lab tested the above referenced shaft grounding products and found that out of the box, the shaft grounding ring drops shaft voltages from ~30v peak-to-peak (no shaft grounding) down to 5-7v peak-to-peak.  Even the 5-7v peak-to-peak isn't low enough to prevent dielectric breakover.  As our test motors ran 24/7, the 5-7v creeped up to ~15-17v after just over a year of continuous operation.  These results are better than no shaft grounding, however, the test motors' bearings fluted after 3 years of operation; far less than the motors service life.  
+In short, don't be afraid to asked the following questions.  They will cut to the core of how a shaft grounding system performs: 1) what shaft voltages does the shaft grounding system achieve?  2) how does the system maintain the shaft voltages below that threshold known to cause breakover through the bearing grease? 3)  If the environment is dirty, then how does the shaft grounding system ensure a path of least resistance for current to flow away from the bearing?  It doesn't take a lot of contamination to negatively impact shaft grounding performance.  
+I hope this information is helpful.  Feel free to let me know if you have any follow-up questions. 
+Sam P.
+www.shaftgroundingsystems.com
+ "
+Is Bearing having fluting marks?,2017-06-01T05:33:44,TUSHAR000001,"Since last one month we observed rise in high frequency component at motor NDE brg. of PA Fan motor (NDE has got 2 brgs.  NU230  & 6830 ).Sound from bearing had increased.We are using emerson CSI 2130 .Spectrum showed high frequency component between 1to 20khz  around 26Gse which got reduced after greasing to 15 gse but within 1 day again increased back. Overall vibration increased to 15mm/sec (zero to peak). In peakvue with 2k hz filter , BPFO peaks were visible (peakvue value around 18). When sound increased from NDE brg. even more ,motor was replaced. Now i am posting NDE side NU 230 Inner race photos and DE side NU230 photos also ,please confirm the bearing defect."
+Is Bearing having fluting marks?,2017-06-02T04:10:34,TUSHAR000001,innner race of NU230 Brg. in zoom view.
+Is Bearing having fluting marks?,2017-06-02T16:31:45,BEATNIK,"Yes, that's textbook fluting.
+ There have been many good discussions here about it over the years: https://www.maintenance.org/top...63202347#77420702863"
+Is Bearing having fluting marks?,2019-08-19T18:41:43,SAM THE GROUNDING MAN,"First time on this blog and I see these postings are a couple years old, but here goes it anyway:
+I reviewed the pictures and agree you are experiencing electrically induced bearing failure.  Incidence rates of bearing failure on VFD motors is at least 60% by 2 years and only continues to climb from there.  It is a well-accepted and pervasive problem that particularly plagues operations that run 24/7.  The following information is based on long-term field and lab studies over 30 years.
+1) Capacitive discharge through the bearing is a local event caused by the VFD gated mechanism switching on and off.   VFD brands, altering the carrier frequency, installing induction absorbers on the wiring, shunts, conductive grease, etc. are not a fix for this phenomenon.  A shaft grounding device is the only known way to economically eliminate capacitive discharge through the bearing.
+2)  Circulating currents can be present on larger framed motors and are inherent to the motor.  This is different than capacitive coupling as described above under #1.  Our field research has shown that motors 100-200hp and with rpm <=1200 or motors >=200hp regardless of rpm are susceptible to circulating currents.  Incident rates of circulating currents being present is 25-35% for the motor parameters described above.  Insulated bearings will not take care of circulating currents as the current will find a parallel pathway and take out bearings in connected equipment.  A typical set-up to deal with circulating currents is to either provide shaft grounding on both ends of the motor or use an insulated bearing on the non-drive end and a drive end shaft grounding system to break the current loop.
+3)  Not all shaft grounding devices are equal.  It is certainly confusing with the different available products on the market.   The following are key principals that cannot be ignored while researching shaft grounding products.  Always have these concepts and questions at the forefront of your mind when researching shaft grounding options:
+The grounding system MUST be a better competitor to the bearing for grounding the voltage/current away from the bearing.  While most shaft grounding systems lower shaft voltages right out of the box, not all shaft grounding systems lower voltages below the threshold to prevent current flow through the dielectric (bearing grease) then onto the bearing.  Moreover, most shaft grounding systems cannot maintain for the long-term voltages below the known threshold.  One major manufacturer of shaft grounding rings (SGRs) was asked the question during a webinar ""how do you know the grounding system is working?"" and their response was if the shaft voltage readings are below 10v, then the grounding system is working.  Problem with that response is shaft voltages needs to be much lower than 10v to prevent breakover through the bearing grease.  While 10v will certainly slow down electrically induced bearing damage, it will not eliminate the problem.  We've extensively lab tested the above referenced shaft grounding products and found that out of the box, the shaft grounding ring drops shaft voltages from ~30v peak-to-peak (no shaft grounding) down to 5-7v peak-to-peak.  Even the 5-7v peak-to-peak isn't low enough to prevent dielectric breakover.  As our test motors ran 24/7, the 5-7v creeped up to ~15-17v after just over a year of continuous operation.  These results are better than no shaft grounding, however, the test motors' bearings fluted after 3 years of operation; far less than the motors service life.  
+In short, don't be afraid to asked the following questions.  They will cut to the core of how a shaft grounding system performs: 1) what shaft voltages does the shaft grounding system achieve?  2) how does the system maintain the shaft voltages below that threshold known to cause breakover through the bearing grease? 3)  If the environment is dirty, then how does the shaft grounding system ensure a path of least resistance for current to flow away from the bearing?  It doesn't take a lot of contamination to negatively impact shaft grounding performance.  
+I hope this information is help.  Feel free to let me know if you have any follow-up questions. 
+Sam P.
+www.shaftgroundingsystems.com
+ "
+Reciprocating Compressor Liner Failure,2019-07-12T05:38:31,PAWANNLNG,"We have Reciprocating type Dresser Rand make Natural Gas ( BOG)  compressor.. It is 2 stage 4 cylinder compressor.Recently we have done complete overhauling of the machine and replaced all piston ring and rider ring with new one. In HP NDE Cylinder Piston rubbed the liner after only 50 hrs of running hour. With same piston ring and rider ring we are getting more than 4500 running hour life. In one piston there is 2 Piston and 2 rider rings. Construction of rings is Rings Split type.
+What are probable reason for failure??"
+Reciprocating Compressor Liner Failure,2019-07-13T11:38:54,DAVE REYNOLDS,"Please provide additional details, do you have any photos of damaged liner? Rubbed the liner is a very broad term, rubbed where in the liner? new liners? packing? any measurements taken on the liner to prove it is straight and not worn?
+If the piston touched the liner, ring rides too deep in piston, egg shaped liner, worn piston holding pin, bent rod to name a few possible starting points
+Dave"
+Reciprocating Compressor Liner Failure,2019-07-15T09:53:47,AZIZ58,"pawannlng posted:
+We have Reciprocating type Dresser Rand make Natural Gas ( BOG)  compressor.. It is 2 stage 4 cylinder compressor.Recently we have done complete overhauling of the machine and replaced all piston ring and rider ring with new one. In HP NDE Cylinder Piston rubbed the liner after only 50 hrs of running hour. With same piston ring and rider ring we are getting more than 4500 running hour life. In one piston there is 2 Piston and 2 rider rings. Construction of rings is Rings Split type.
+What are probable reason for failure??
+dear sir
+because of failure event after overhauling you should check all installing and assembly procedure .do you have any vibration condition monitoring data during 50 hrs?any protection like rod drop proximity sensor ?
+are you sure about  operating process parameter during that time ?   "
+Reciprocating Compressor Liner Failure,2019-07-16T03:55:37,URQUIOLA,It is necesary to evaluate pictures and operational parameters. Probably was a assembly problem hiwever it is necessary to have more information.
+GEAR FAILURE AT SCREW PUMP,2019-05-07T04:29:01,DOMINICH.VO,"Dear Experts, 
+ this is one case the timing gear has damage then i try to figure out the root cause. 
+attached is the damage gear with some pitting in teeth surface. 
+ Please advice some possible cause...
+ Many thanks "
+GEAR FAILURE AT SCREW PUMP,2019-05-07T05:19:34,KISHORE KUMAR,"Dear DOMINICH.VO ,
+it might be damaged due to operated under Misalignment or from assembly errors .If you have any Vibration spectrum , we can get more details for root cause failure findings ."
+GEAR FAILURE AT SCREW PUMP,2019-05-07T06:07:44,DOMINICH.VO,"Dear Mr. Kishore Kumar, 
+ Please have a look in spectrum. Some information that this pump is running with low viscosity compared with the specification. Does is effect to rotor and gear condition. "
+GEAR FAILURE AT SCREW PUMP,2019-05-08T04:55:30,KISHORE KUMAR,"Dear DOMINICH.VO ,
+increased noise floor with gear impact indication , are you maintaining  and changing its lubrication as per the manufacturer recommendations and grade  .
+Do you mean viscosity of pumping fluid , low viscosity might have some effect but i don't think so it is the main cause   .For better understanding on this you can refer the manual and contact the support service ."
+GEAR FAILURE AT SCREW PUMP,2019-05-11T11:34:25,DAVE REYNOLDS,"https://www.machinerylubricati...ad/150/gear-failures
+https://www.rexnord.com/conten...ments/108-010_manual
+Here are a couple of links showing different failure modes
+Your images show the gear was loose on the shaft, lubrication is in question, gear material may not have been hardened to proper levels
+Dave"
+GEAR FAILURE AT SCREW PUMP,2019-05-13T03:46:43,DOMINICH.VO,"Thanks Dave for material. 
+ the lubrication is just follow the manufacturer and no any abnormal. The spec for oil is VG100, The oil was maintaining and changing as manufacturer then i have no doubt in oil issue. 
+ As see the defect mark, look like a very excessive load effect on gear and broken the teeth surface, the spectrum also shows high GMF relate to gear wear , also indicates very high load. 
+then the next question is why the high load on the gear , i keep going my investigation on this way/...
+ Thanks "
+VFD failure,2019-04-29T00:48:23,LUKEBARBER,What are the main causes of a VFD failing and what can we do to prevent them?
+VFD failure,2019-04-29T13:56:50,BECAR,"- inappropriate VFD power 
+- inappropriate VFD settings
+- unpredicted machine's load
+- parallel drive speed mismatch
+- environment conditions (heat, moisture, dust...)"
+VFD failure,2019-04-30T02:10:49,LUKEBARBER,"Thank you for the response.
+I found the following post helpful on the subject.
+https://precisionautomation.ne...aintain-a-vfd-drive/"
+Complet root cause analysis on a wheel loader,2019-03-07T12:26:51,NICKTRUCK,"Hi Dear All!
+I request your advices in order to perform a root cause analysis on a wheel loader (a mining equipment).
+The goal is to see why the equipment is not reliable, so I intend to use the ishikawa or fishbone method to see the causes on failure and act on them.
+I would like to know if the standard factors decomposition as follow: Measurement, Materials, Personnel, Environment, Methods, Machines is suitable to explain why my equipment is not reliable?
+ Or do you think that I should extract all the different problems of the machine  recorded in  a database, focus on one main single problem and perform my ishikwa diagram on that particular problem ?
+Thanks in advance for your advices"
+Complet root cause analysis on a wheel loader,2019-03-08T02:23:02,YOUSUF MASOOD,"RCA is used for single and usually repetitive problem but if your goal is to improve overall reliability then I suggest looking into equipment failure history and take following steps
+Calculate MTBF( Mean Time Before Failures) by diving the span of time ( say 1 year) by number of failures
+Using Pareto principle , figure out which failure modes are causing highest down times
+Then rank these failure modes as per their criticality ( safety/production loss/etc) and select the ones first which are more critical 
+Then develop a counter actions list (design improvement/Maint checks/ personnel training/logistics improvement/etc)
+Check that if preventative checklist/task list covers the points located in no 3
+Develop a critical spare parts list which should be readily available at store for corrective/breakdown action
+After 3-6 months recalculate MTBF and compare it with the MTBF calculated previously (in step one) 
+Repeat the cycle till desired reliability is achieved !"
+Complet root cause analysis on a wheel loader,2019-03-08T06:26:55,NICKTRUCK,"Hi! thanks a lot for you reply.
+Regarding the point n°3, how do you rank the failure mode as per their criticality ?
+Regards
+ "
+Complet root cause analysis on a wheel loader,2019-03-08T06:50:37,NICKTRUCK,"Let’s say that I perform a pareto and discovered that I have hydraulic failure, mechanical failure, Brakes failure,  all  representing nearly 80%  of my downtimes.  How do I rank them per their (criticality safety/production loss/etc) and what are the different factors of criticality? Then do I perform an FMEA on all those three failures to select the most critical, in order to add an RCA (ISHIKIWA) on that one critical problem to implement actions ?"
+Complet root cause analysis on a wheel loader,2019-03-14T02:39:42,YOUSUF MASOOD,"Apologies for the late response.
+Criticality factors depends on the type of machines and process. However, it is based on the risk of financial loss, safety consequence, loss of reputation etc. \
+As a general rule, Risk= probability of failure X consequence of failure
+ In terms of Plant machinery,
+During say one year time,        Risk ($/yr) = Failure frequency (per year) X Cost consequence ($)
+ Now consider the example below :
+Now say you have 5 mechanical failures and financial loss is around 100 $ each failure, so using the formula above the risk is 500 $/ year
+You have 1 electrical failure and financial loss is 80$ each failure, so the risk is 80 $/year
+You have 3 brake failures and each failure costs you 200 $ each failure, so the total risk is 600$ /year.
+Now you can rank the failures by the associated financial risk
+Brake failures 600$/year
+Mechanical Failures 500$/year
+Electrical failures 80$/year
+ Notice that number of brake failures (3) is less the number of mechanical failures (5) but due to the highest financial impact, it should be taken care of first.
+Now if your improving your preventative maintenance, having some brakes in the store , getting better quality brakes , training your people for replace the brake quicker in case of failure etc etc  you can eliminate nearly half 600/1180 of the financial risk.
+After wards, follow the same principle on the rank below i.e., Mechanical failure(s)
+ Complete and thorough RCA is difficult and time consuming. I suggest do it on the most critical first and then the next and so on "
+Steam Path Audit,2019-02-27T00:08:57,ROTATING GUY,"Hi,
+Is there anyone of us recommend company who catered SPA (Steam Path Audit) for STG? 
+regards,"
+Steam Path Audit,2019-02-27T14:02:48,DAVE REYNOLDS,"https://beta.spiraxsarco.com/r...ces-and-design-tools
+Not sure if this company provides the services you require, I would assume they would have contacts that would provide this service
+Dave"
+Steam Path Audit,2019-02-28T05:36:52,ROTATING GUY,"Dave Reynolds posted:
+https://beta.spiraxsarco.com/r...ces-and-design-tools
+Not sure if this company provides the services you require, I would assume they would have contacts that would provide this service
+Dave
+thank you my friend."
+catastrophic failure,2019-02-19T07:17:54,PIZO,"Hello Professionals,
+Motor/timing belt drive in calander
+DE bearing is spherical roller bearing 21316 E/c3 (20 Rollers), seized and the shaft got broken, Temperature was +200 C, the damage started with BPFO in the afternoon, 6 hours later...... catastrophic failure.
+investigation of the case, we found another positions has 21316 cc/c3 (19 Rollers) and we never experienced a catastrophic failure !
+Could an Expert help me in justifying the case
+Thank you in advance
+Pizo
+    "
+catastrophic failure,2019-02-19T08:00:34,YOUSUF MASOOD,"Though more details are required( photos/spectrum etc) but I suspect sudden fluctuation in load or process parameters may have dislocated bearing in the housing causing high friction / temperature resulted in bearing seizure. 
+Also check the greasing schedule for the bearings. "
+catastrophic failure,2019-02-19T09:21:17,PIZO,"Hi,
+more info: Motor 140 HP & 1200 rpm
+the catastrophic failure happened many times , only with the 21316 E/c3 ( 20 rollers) , so as soon as the BPFO appear, some hours later and it is died !
+Could the number of rollers { 21316E/c3 (20Rollers) & 21316 CC/c3 , (19 Rollers)}  play a role in the carrying load capacity and skidding characteristics which leads to fast failure ?
+thx
+Pizo
+ "
+catastrophic failure,2019-02-19T12:33:41,BECAR,Did you measure belt tension in N? And compare it with the bearing load limit?
+catastrophic failure,2019-02-19T14:36:04,PIZO,"hi
+i did not measure and compare, bu it is a good direction to search, but which load exactly should i compare ?
+Fap=maximum permissible axial load [kN]
+Fr=radial load [kN]
+P=equivalent dynamic bearing load [kN]
+P0=equivalent static bearing load [kN]
+Pm=equivalent minimum load [kN]
+****i did not work with these calculations since 20 years ....out of my scope, but i will do my best go through...
+Regards
+Pizo"
+catastrophic failure,2019-02-19T15:11:07,BECAR,"You should use some pro tension meter like Trummeter, which has its own calculator for suitable belt tension in N or in Hz. Or measure the force directly at the installation. I think the measured belt force on the Trummeter means just force on one side of the belt so you should multiple it roughly by 2 (or consider angles for more precise value). For the new belt installation, the tension value should also be multiplied by 1,3.
+When you get this value, it should be reasonably lower than the radial load bearing values."
+Reference for root cause analysis,2019-01-21T06:56:51,AZIZ58,"Dear all
+Pls furnish me about standard or technical references for root cause analysis
+Best regards"
+Reference for root cause analysis,2019-01-28T22:07:53,JOHN FROM PA,"Conceptually,  RCA is a wide field, but I assume you mean with respect to machinery. One starting point might be https://conference.reliablepla...root-cause-analysis/.  I would also suggest you look around that Conference operator for related info."
+Reference for root cause analysis,2019-01-29T03:25:49,AZIZ58,"John from PA posted:
+Conceptually,  RCA is a wide field, but I assume you mean with respect to machinery. One starting point might be https://conference.reliablepla...root-cause-analysis/.  I would also suggest you look around that Conference operator for related info.
+Thanks dear john for useful information
+ "
+Broken Gear Shaft,2019-01-07T10:55:46,JENISH,"Dear Experts,
+Can anybody give any expert opinion about this Broken Shaft? It is from a stand gearbox of a rolling mill.."
+Gas Turbine Bearing Failure - Lube Oil Leakage Caught Fire,2018-11-22T19:34:29,RIZWAN AHMAD,"The machine is Turbo Generator , the Gas turbine is GE Frame 1.
+Fire incident happened in GT side due to Lube Oil leakage either internal or external not confirmed yet. Upon inspection , the Babbitt material loss found in bearing#3 (see attached crossection ) at LP rotor. Also coke or tar found at LP bucket. All relevant pics and GT crossection dwg attached .
+The questions are:
+1) what’s the origin of lube oil leakage external or internal ? Is it split from bearing housing or lube oil supply pipe leakages ?
+2) what’s the root cause of lube oil leakage ?
+3) What’s the root cause of Babbit materials loss at Lower part of Brg#3? Pics attached 
+4) how the coke or tar formed at LP buckets ? Pic attached "
+Gas Turbine Bearing Failure - Lube Oil Leakage Caught Fire,2018-11-22T19:47:05,RIZWAN AHMAD,The pic of failed bearing #3 is also attached.
+Gas Turbine Bearing Failure - Lube Oil Leakage Caught Fire,2018-11-26T06:35:22,NGO DINH,"I do not have experience on frame 1 but I think you should check some information and answer for yourself that:
+1. The leakage oil just happen at Bearing #3 or at all bearings?
+2. Have you checked the oil drain piping for any plug/stuck? 
+3. there is buffer air supplied to labyrinth seal, isn't it? if any, have you checked the buffer air lines? 
+4. How about oil vapour system?
+5. Have you checked the bearing temp? when is it increased? the same for vibration?
+If the fire happen in the moment of GT running, i think that the oil leakage happen from internal (if from external, i believe someone seen and announced).
+The bearing look like running under too high temp. The oil under high temperature (over 200oC) will form coke. "
+Gas Turbine Bearing Failure - Lube Oil Leakage Caught Fire,2018-11-26T07:38:48,RIZWAN AHMAD,"Ngo Dinh posted:
+I do not have experience on frame 1 but I think you should check some information and answer for yourself that:
+1. The leakage oil just happen at Bearing #3 or at all bearings?
+Total 4 bearings, All bearings Checked , only bearing#3 found with Babbitt material lost. other 3 bearings found normal.
+2. Have you checked the oil drain piping for any plug/stuck? 
+Yes Checked , no obstruction or Plugging observed.
+3. there is buffer air supplied to labyrinth seal, isn't it? if any, have you checked the buffer air lines? 
+Yes, Seal air has been taken from 10th stage of Axial Compressor, air supply lines have been checked and found normal for required seal air pressure.
+4. How about oil vapour system?
+Please elaborate further on this??
+5. Have you checked the bearing temp? when is it increased? the same for vibration?
+Under Review.
+If the fire happen in the moment of GT running, i think that the oil leakage happen from internal (if from external, i believe someone seen and announced).
+Fire smoke has been observed in exhaust duct of GT, soon after GT enclosure was opened and fire was seen, in 1st thought, LO Pump was shutdown and fire was removed, once LO Pump Started again, the fire happened again then again the L.O Pump was shutdown and fire removed. Fire is for sure due to L.O leakage , but still mystery from where the Oil leaked and how the fire caught? and how the L.O penetrated at LP rotor bucket and formed coking/tar since L.O Pressure is lesser than the Turbine Pressure??
+The bearing look like running under too high temp. The oil under high temperature (over 200oC) will form coke. 
+The bearing#3 damage looks secondary damage due to fire and dry running of LP rotor (since L.O pump was stopped)
+How the fire happened , still dont know??
+ "
+Gas Turbine Bearing Failure - Lube Oil Leakage Caught Fire,2018-11-26T07:44:50,RIZWAN AHMAD,"The Ventilation Fan was also tripped due to breakage of its belt which may increase the T of enclosure and which further melt the Babbitt white metal which leads to bearing failure ?? I am not sure, can u recognize from bearing pic, is it melted during running or stationary? or is it melted due to high LO temp??? I am not sure "
+Gas Turbine Bearing Failure - Lube Oil Leakage Caught Fire,2018-12-03T05:09:14,NGO DINH,"It is possible that the shaft is been hot due to fire and make the babbit overheat like picture.
+You should take event sequence and see what happen near the event time. Focus to oil system and clearance, i think you will get your answer."
+Gas Turbine Bearing Failure - Lube Oil Leakage Caught Fire,2018-12-03T07:10:43,RIZWAN AHMAD,"During inspection, the brass oil seal was found damaged. So, there is a possibility the oil could leak from Brg#4 and got fire, but question is why Bearing#4 which is near to fire location is not melted and how the fire traveled from Brg#4 towards Brg#3 ?  You know its Turbine Section , the pressure at Brg#3 is higher than the pressure at Brg#4"
+Mechanical seal failure,2018-11-15T19:07:35,ABDULLA,"We are facing multiple seal failures (NDE side seal) in one of our multistage NGL pump . When opened the seal we found water, some black paste, one of the shaft O ring disintegrated, other O rings elongated  etc after only 6 month in service. The seal is from  Flexibox with API plan 53C . The O ring is Viton and supplied by OEM.  The symptoms begins with loosing the barrier seal which required frequent top up.
+We suspect   pump product is entering inside seal due to O ring issue and causing spring hangup . Another doubt is assembly error during seal refurbishment. But as per the maintenance who refurbish the seal ( Replacing all parts except casing with new spares) there is no chance for any fitting error as it is a cartridge type seal and passes  the static test every time.
+My question is how can we test the O ring in a practical way whether it is compatible for this service. Please bear in mind DE side also uses same components.
+Is there any way the product can come to seal other than through secondery seals as the barrier pressure is always high
+Is there any error during seal assembly is possible and if yes please explain
+Any other thoughts are welcome
+ "
+Mechanical seal failure,2018-11-16T07:47:33,KISHORE KUMAR,"Dear ,
+is there any vibration along with the seal damage .if so please post the Vibration spectrum .i don't think so it has seal issue ,may be temperature raise due to misalignment ."
+Mechanical seal failure,2018-11-16T14:02:36,ABDULLA,This units have only case vibration and the monthly trend is not showing any increasing trend. The overall levels are around 4mm/sec peak.Also the temp. of seal inlet /out let was no high.
+Mechanical seal failure,2018-11-18T07:26:20,ABDULLA,can some one experienced with mechanical seals can through some light at least how they will inspect the seal components and possible reasons for damage of each component 
+Mechanical seal failure,2018-11-18T14:05:55,DAVE REYNOLDS,"https://www.marcorubber.com/o-ring-failure.htm
+https://www.prepol.com/solutio...o-ring-failure-modes
+http://www.dichtomatik.mx/cata...alisis-de-fallas.pdf
+http://www.pspglobal.com/seal-failure.html
+http://www.madgetech.com/pdf_f...app_notes/orings.pdf
+Could be the type of barrier fluid you are using that is causing the oring to fail, could be the fluid you are pumping is attacking the oring, could be too hot for oring abilities.
+The above links have some good images and details of what to look for on oring failures. I understand the DE is the same design, but are you POSITIVE they use the same barrier fluid? 
+What you describe above sounds like chemical attack to the oring, if their was problems with mechanical assembly or vibration in nature, this would not cause the oring to do what you describe. Black gunk sounds like dissolved oring material, and out of shape oring also sounds like swelling of the oring material, are you SURE you have viton in both ends and that viton is compatible with your barrier fluid/product
+Dave"
+Mechanical seal failure,2018-11-18T18:30:52,ABDULLA,Thanks Dave for some throwing some light
+Mechanical seal failure,2018-11-21T08:33:17,BECAR,Which fluid and which o-ring material. I think here is the answer. 
+Firewater pumps p&id and network over pressure protection,2018-09-16T12:04:32,MNEWIRAQ2000,"Hi,
+Can i get Firewater pumps p&id for any  plant you are currently working for or worked in before please. 
+I want to check the over pressure protection mechanism.
+Most systems that I've seen have only pressure safety valve for pump case relief purpose only!! 
+ Also if you have any ideas about the philosophy of over pressure protection, please comment with it.
+Your contribution and support will be highly appreciated. 
+mneemnewiraq2000@gmail"
+Firewater pumps p&id and network over pressure protection,2018-09-24T15:47:02,PAULENGR,"I can't imagine why you'd have overpressure protection on fire pumps. For one thing most of the ones I'm familiar with are centrifugals so that wouldn't apply (overpressure is a positive displacement pump thing) and it may not be an actual electrical device but more likely simply a rupture disc. When it comes to fire pumps the general protection strategy with them is to run to failure unless the failure would cause additional consequences with the assumption that responding to a fire is the greater hazard. For example fire pumps specifically do NOT have overload/overcurrent protection because the goal is to run to failure even if it means burning up the motor. However a short circuit can shut down multiple fire pumps and/or cause other unforseen consequences so short circuit (fuse or magnetic-only circuit breaker) protection is included. Based on the same logic though I have never seen a written standard for fire pumps. I would have to imagine that overpressure protection would be along the same lines...even if we blow the line apart or dump water everywhere and hardly get anything put into action to put out the fire, so overpressure protection wouldn't be included."
+Firewater pumps p&id and network over pressure protection,2018-09-24T20:33:16,MNEWIRAQ2000,"PaulEngr posted:
+I can't imagine why you'd have overpressure protection on fire pumps. For one thing most of the ones I'm familiar with are centrifugals so that wouldn't apply (overpressure is a positive displacement pump thing) and it may not be an actual electrical device but more likely simply a rupture disc. When it comes to fire pumps the general protection strategy with them is to run to failure unless the failure would cause additional consequences with the assumption that responding to a fire is the greater hazard. For example fire pumps specifically do NOT have overload/overcurrent protection because the goal is to run to failure even if it means burning up the motor. However a short circuit can shut down multiple fire pumps and/or cause other unforseen consequences so short circuit (fuse or magnetic-only circuit breaker) protection is included. Based on the same logic though I have never seen a written standard for fire pumps. I would have to imagine that overpressure protection would be along the same lines...even if we blow the line apart or dump water everywhere and hardly get anything put into action to put out the fire, so overpressure protection wouldn't be included.
+PaulEngr, good day!
+Actually there are many firewater network damages occurred in the past months due to the high pressure.
+The sequence will be like that:
+1- due to firewater pressure drop, the main electrical pump will start automatically. And from firewater philosophy, it can be stopped manually only.
+2- while the operator investigating the cause of the pump start, this pump will keep the pressure increasing in the firewater network untill the pipe joint fails!
+ And thats why i want to add a control valve to eliminate the overpressure events.
+ Again please if you have any p&id for any firewater system please pass it to me.
+Looking for your ideas please.
+ Regards,
+ Mohammed"
+Firewater pumps p&id and network over pressure protection,2018-09-29T17:24:10,JOHN FROM PA,"PaulEngr posted:
+Based on the same logic though I have never seen a written standard for fire pumps.
+What about NFPA 20?"
+Firewater pumps p&id and network over pressure protection,2018-10-01T01:19:53,PAULENGR,"Interesting, never noticed before because the title doesn't exactly scream ""fire pumps"". It also doesn't contain anything resembling a P&ID from a cursory scan, and simply references NFPA 70 (NEC) for electrical installation requirements."
+Firewater pumps p&id and network over pressure protection,2018-10-02T00:39:14,JOHN FROM PA,"PaulEngr posted:
+Interesting, never noticed before because the title doesn't exactly scream ""fire pumps"". It also doesn't contain anything resembling a P&ID from a cursory scan, and simply references NFPA 70 (NEC) for electrical installation requirements.
+Not sure what you are looking at but my copy, NFPA 20 is titled Standard for the Installation of Stationary Pumps for Fire Protection.
+Further, chapter 4 has the following contents
+Chapter 4 General Requirements
+4.1 Pumps.
+4.2 Approval Required.
+4.3 Pump Operation.
+4.4 Fire Pump Unit Performance.
+4.5 Certified Shop Test.
+4.6 Liquid Supplies.
+4.7 Pumps, Drivers, and Controllers.
+4.8 Self-Regulating Variable Speed Fire Pump Units.
+4.9 Multistage Multiport Pump.
+4.10 Centrifugal Fire Pump Capacities.
+4.11 Nameplate.
+4.12 Pressure Gauges.
+4.13 Circulation Relief Valve.
+4.14 Equipment Protection.
+4.15 Pipe and Fittings.
+4.16 Suction Pipe and Fittings.
+4.17 Discharge Pipe and Fittings.
+4.18 Valve Supervision.
+4.19 Protection of Piping Against Damage Due to Movement.
+4.20 Relief Valves for Centrifugal Pumps.
+4.21 Pumps Arranged in Series.
+4.22 Water Flow Test Devices.
+4.23 Steam Power Supply Dependability.
+4.24 Shop Tests.
+4.25 Pump Shaft Rotation.
+4.26 Other Signals.
+4.27 Pressure Maintenance (Jockey or Make-Up) Pumps.
+4.28 Summary of Centrifugal Fire Pump Data.
+4.29 Backflow Preventers and Check Valves.
+4.30 Earthquake Protection.
+4.31 Packaged Fire Pump Assemblies.
+4.32 Pressure Actuated Controller Pressure Sensing Lines.
+4.33 Break Tanks.
+4.34 Field Acceptance Test of Pump Units.
+4.35 Automated Inspection, Testing, and Distance Monitoring of Devices, Meters, and Equipment.
+ "
+Failure of synchronous motor to start up on no load,2011-03-16T11:26:58,DEZ,"I have a synchronous motor rated 2025HP,11KV,82.44A Excit: 43.6V, 112.3A,750RPM with a field resistor of 1 ohm which is a main drive motor for the winder,at first when this motor was run on no load it ran ok but when we tried to test run it in presence of the end users it couldn't start it was just humming.we have carried out all the necessary tests,we haven't found any open circuit in the power and rotor circuit, we have injected dc voltage in the rotor and all the pole voltage drops are equal.what can cause this motor to behave the way it is behaving?"
+Failure of synchronous motor to start up on no load,2011-03-19T14:36:03,DAVE REYNOLDS,"Dez,
+When you say when in ran no load it was ok, then when you started it the second time was is still at a no load condition? I assume necessary tests include:
+Voltage present and balanced on stator
+No grounding of the stator or rotor.
+Resistance is balanced on the stator/surge test
+Resistance is balanced on the rotor/armature
+Brushes, brush shunts, spring tension, slip ring circuit, resistor all check good?
+Sounds like a single phase condition or no voltage getting to the rotor/armature, what about the fuses, breaker, wires to motor, junction box on side of motor.
+Dave"
+Failure of synchronous motor to start up on no load,2011-03-21T05:00:12,DEZ,"what is really happening is that the motor will run on no load untill you switch it off but when you want to start it again it will just hum when you rotate the rotor manually and switch it on it runs so its like on certain positions it is locking itself( like stator north-rotor north)we have checked to see if there is any reversed connection on the stator and also checked the polarity on the rotor poles,all is ok but i don't know what is causing the motor to fail to start at certain postions."
+Failure of synchronous motor to start up on no load,2011-03-28T11:20:08,DAVE REYNOLDS,"Sounds like intermittent electrical connection or a failure to provide balanced voltage to the motor.
+http://www.basler.com/downloads/synchmtr.pdf
+http://www.kilowattclassroom.c...chive/SyncMotors.pdf
+Here are a couple of links that may assist you in basic troubleshooting. Have you contacted the OEM of the motor / manufacturer?
+Dave"
+Failure of synchronous motor to start up on no load,2011-03-28T11:36:53,DEZ,Thank you Dave for your efforts.The OEM (WEG) has been contacted and we are still waiting for a feedback from them.
+Failure of synchronous motor to start up on no load,2018-09-09T00:04:02,RIYADH SALIH,"Have you checked he slip guard relay, check diodes on the exciter / excitation panel / check the multilin motor control module what fault you are getting is it tripping because of vibration or power factor"
+Failure of synchronous motor to start up on no load,2018-09-09T00:06:22,RIYADH SALIH,Check the delay timer on PLC if it is tripping around 700 - 800 RPM or it reaches 1795 RPM  and it trips?
+Failure of synchronous motor to start up on no load,2018-09-09T18:16:16,JOHN FROM PA,"Riyadh Salih, this thread dates from 2011."
+Gas Turbine Tilted Pad Journal Bearing Failure,2018-08-31T05:08:05,PAWANNLNG,"We have Siemens SGT 300 ( 7.5 MW) Gas turbine Generator.
+During starting of this machine heavy vibration observed and machine tripped at 9000 RPM on high vibration ( Vibration tripping set at 90 Microns). More than 15 trial taken in this machine neglecting vibration. On opening this machine cold end bearing found damage. Photographs attached. What is probable reason for this bearing failure??"
+Gas Turbine Tilted Pad Journal Bearing Failure,2018-08-31T08:43:57,KISHORE KUMAR,"Dear sir ,
+its clear that  the bearing has continuous rub , primary suspect on  Lubrication .But we could find the root cause , if we have Vibration Spectrum ,Orbit plots or Shaft center lone data ,Please post if you have any ."
+Gas Turbine Tilted Pad Journal Bearing Failure,2018-09-04T07:20:58,ROTATING GUY,"pawannlng posted:
+We have Siemens SGT 300 ( 7.5 MW) Gas turbine Generator.
+During starting of this machine heavy vibration observed and machine tripped at 9000 RPM on high vibration ( Vibration tripping set at 90 Microns). More than 15 trial taken in this machine neglecting vibration. On opening this machine cold end bearing found damage. Photographs attached. What is probable reason for this bearing failure??
+Hi Pawannlng,
+Why it need to neglect the vibration? could you share plot if any like shaft centerline, sequence of orbit and time signal, bode and polar possible.
+When is the last time taken oil analysis prior this incident? 
+regards,
+RG"
+Gas Turbine Tilted Pad Journal Bearing Failure,2018-09-04T11:11:36,PAWANNLNG,"Dear Sir
+Oil analysis was done six month back and report was normal. I am attaching only available  vibration plot.
+ "
+Gas Turbine Tilted Pad Journal Bearing Failure,2018-09-05T07:50:34,SHERUB,"Dear Pawan,
+Without referring the diagnostic plots i think its very difficult to pin point the root causes of the failure. For fluid film tilting pad bearings, we need to refer more plots and one plot may not give clear conclusion. My opinion, since i am practicing vibration analyst more into this type of bearings. For hydro machines this type bearings are commonly used.
+Sherub"
+Gas Turbine Tilted Pad Journal Bearing Failure,2018-09-05T10:52:16,RAMONRUIZ,"Dear Pawannlng, the possibles causes are:
+1.- misalignment (external misalignment)
+2.- bearing housing excentricity (internal misalignment)
+3.- low lub oil pressure in bearing or any restriction in lub line.
+4.- over radial load.
+5.- Preload in bearing (internal or external)
+we can rule out the last possibles causes using technologies that Rotating Guy said (Shaft centerline, sequence of orbit and time signal, bode and polar possible, spectrum, etc).
+ "
+3309 A/C3 Bearing Premature Failure,2018-08-21T15:35:37,ZAVERI_SAGAR,"Please check out attached bearing failure picture. Bearing failed within 200 Hours after replacement. 
+Equipment: centrifugal pump(Flowserev CPX) for water service
+Bearing: SKF 3309 C3(DE) and SKF 6309 C3(NDE)
+Bearing Failed 3309 C3
+Oil Lubricated Bearing VG 68
+Running RPM: 900-1100  
+Alignment was under range of 0.05mm
+Previous bearing life was more than 10000 hours
+what could be reason for this failure? Axial/Radial load, Dirt in oil, Bearing manufacturing defects ?
+Brief answer is apprenticed
+ Note: Its double raw angular contact ball bearing with metal cage. (Cage removed while taking picture) "
+3309 A/C3 Bearing Premature Failure,2018-08-31T14:14:15,JOHNNY 5,"The bearing is indicating excessive axial loading for some reason.  It does not indicate the presence of excessive heat.  Is it possible, the lubricant was not correct or incorrect amount?  But that would indicate excessive heat.  This was not a manufacturing defect anything related to the bearing.  Could the bearing have possibly been cocked on the shaft?  I have seen that once before, where the bearing was not seated correctly against the shoulder of the journal.  Find the reason for axial loading and you will find the problem."
+3309 A/C3 Bearing Premature Failure,2018-08-31T18:16:48,ZAVERI_SAGAR,"Johnny 5 posted:
+The bearing is indicating excessive axial loading for some reason.  It does not indicate the presence of excessive heat.  Is it possible, the lubricant was not correct or incorrect amount?  But that would indicate excessive heat.  This was not a manufacturing defect anything related to the bearing.  Could the bearing have possibly been cocked on the shaft?  I have seen that once before, where the bearing was not seated correctly against the shoulder of the journal.  Find the reason for axial loading and you will find the problem.
+Hey Thanks for reply.
+I think your doubt about cocked bearing is absolutely right. Because there was spacer between bearing&housing in axial direction, which was out of position in small portion.(we observed it in disassembly). At that time I thought it occurred due to disassembly. Thank you for clarifying my confusion. "
+Dry Gas Seal Failures,2018-06-02T04:37:20,SAAD AHMED,"One of our centrifugal compressor 2 BCL 306/A of make GE houses the 3rd and 4th compression stages and is being used at our Urea Plant for feeding CO2 gas into the Urea Reactor at 160 kg/cm2. Compressor is equipped with John Crane make Dry Gas Seals of type 28AT at its drive and non-drive ends. In the last two and a half months, we have experienced twice the failure of non-drive end dry gas seal of aforesaid compressor; details are narrated below:
+ The compressor was overhauled in September 2016 and both drive end and non-drive end seal cartridges were replaced. Since then the compressor had been in service No anomaly had been observed in any of the dry gas seals, i.e., no rise in the seal vent pressures till February 2018.
+ In February 2018, during annual turnaround of our Urea plant, only bearings of the compressor were replaced and seal cartridges were not removed.  After turnaround, when machine was taken in service, we started experiencing the rise in the vent pressures of only non-drive end dry gas seal; it went up to 7 kg/cm2 against the normal value of 0.2 kg/cm2.
+ Moreover, a sharp rise in the replacement frequency of dry gas seal filters was observed; every time when we have dismantled the filter housing for replacing the filter, we have found the cotton fiber filters (5 micron size) covered with brownish dust. Lab analysis revealed the presence of Iron in the process CO2 Pertinent to mention that as the pressure difference of 0.5 kg/cm2 has been maintained between filtered and non-filtered gas all the time of operation, it is therefore confirmed that Iron is passing through the filters
+ On April 04, 2018 availing the opportunity of Urea plant outage, the compressor was off lined and both seals were replaced. Upon dismantling the cartridge of non-drive end seal, all internals were found covered with layer of iron rust. Seat and balanced face was in good condition; only balanced face O-ring and thrust ring were found damaged / dislodged.
+ The cartridge of drive end seal was found in clean condition and no Iron dust was found on its internals.
+ After the maintenance, vent pressure of drive end dry gas seal dropped to normal values of 0.15 to 0.20 kg/cm2. However, after operation of 5 to 6 weeks, again the vent pressure of only non-drive seal started creeping up and as of to date the vent pressure is reached up to 3 kg/cm2.
+ Can anyone shed light on this phenomenon. Questions that come to mind:
+Is the fine Iron dust responsible for repeated failure of non-drive end dry gas seal; if so how Iron is impairing the functionality of dry gas seal.
+Why Iron dust is only going into the non-drive end dry gas seal and not in the drive end seal. Be noted that d/s of filter the same line splits into two lines leading to each seal ."
+Dry Gas Seal Failures,2018-06-06T07:10:05,LÊ VŨ,"Dear SAAD AHMED!
+I don't know why iron can enter dry gas seal, because pressure of filtered gas always higher process gas at compressor.
+At our plant we have same problem with DGS, however root cause to failure DGS is liquid enter DGS to damage seal face.
+ "
+Dry Gas Seal Failures,2018-06-19T10:59:12,OCEAN,"Dear Ahmed
+contamination  is from the gas process inside de compressor which brings with it particules of iron
+same problem for our case that happened last year  , but with oil which came from another equipement  and flood the compressor slowly .
+ "
+Dry Gas Seal Failures,2018-08-23T15:21:15,DAVE REYNOLDS,"How about materials of construction and pH of product, is the piping associated with the failing seal made of different material?
+Dave"
+Motor triping issue,2018-05-15T13:47:33,BIJOY PRADHAN,"Dear Members ,
+Here I am informing to all I am facing problem in Air Fin Fan cooler at my working plant (Methanol Company ).
+Problem : High vibration was observed at gearbox  .
+after replacing new gearbox I take motor solo run reading vibration was observed normal  and during solo run no tripping and also more then 1 hour running no tripping.
+ After that inform connect coupling and confirm for test run .
+Today I went for test run after 12 min of normal operation motor tripped .
+1.Motor and gearbox Overall maximum vibration was 4.5 mm/sec .
+2.The high vibration 4.5mm/sec was observed at motor vertical direction . 
+3.Motor and gearbox temperature found normal around 45 c
+4.Motor Amps @ 70 another fin fan cooler running as a same AMPS .
+Motor Running RPM 1140
+Out put RPM 224
+Motor Kw - 55
+So any one suggest me the problem (motor or gearbox )and the cause of tripping .
+    "
+Motor triping issue,2018-05-16T00:25:36,ROTATING GUY,"Hi Bijoy,
+What is the tripping point? high current? vibration?
+try check the OL setting, also what is the driven by the gearbox? conveyor? or else?
+regards,"
+Motor triping issue,2018-05-16T03:42:23,MATESO LUGODISHA SAHAN,"Hi Bijoy,
+What is motor capacity? What driven by gearbox ? and also what tripping point ? high vibration or high current?
+What power line frequency is 60Hz or 50Hz?"
+Motor triping issue,2018-05-16T10:19:56,BIJOY PRADHAN,"Dear Rotating guy and Mateso  Lugodisha ,
+Motor capacity : 55 kw
+Tripping Point and high Current : 70 amps
+High Vibration : 4.5 mm/sec
+Air Fin cooling fan driven by gearbox.
+Motor Volt : 440"
+Motor triping issue,2018-05-17T14:30:32,SHURAFA,"I agree with the others as they are asking to specify what signal caused the motor to activate the shutdown. Did the motor trip on high vibration or overload or something else?
+ If I correctly understood your posts, the trip took place on electrical protection when the motor current activated the overload trip relay. This is odd if an identical sister machine runs at the same current but it does not trip.
+Can you confirm my understanding ?
+ Regards- Ali M. Al-Shurafa "
+Motor triping issue,2018-05-21T05:25:29,ROTATING GUY,"Bijoy,
+Try to replace the thermal overload relay.
+regards,"
+Motor triping issue,2018-06-06T09:21:40,BIJOY PRADHAN,"Finally we found the problem for Motor Tripping issue ......
+Rated AMPS = 88
+Before tripping rely  was  80 AMPS after that rely set 80 to 88 AMPS.
+ Now equipment healthy condition and running smoothly . 
+   "
+Motor triping issue,2018-06-06T14:34:46,SHURAFA,Thank you for the update. 
+Repetitive inner race defect in Motor DE bearing,2018-05-02T04:46:29,VIDYA SAGAR,"Hi Friends,
+          In one of our HT motor we found inner race defect with side bands of 1XRPM in the spectrum and yesterday  we inspected the bearing and found inner race was cracked.But the history of the equipment says it has already two breakdowns with inner race problem.During the first time inner race was having dent and during second time inner race got seized.
+Equipment Details
+Motor RPM:1489
+Motor KW:1600
+NDE bearing:NU 228
+DE bearing:NU 234 + 6234
+Application:Cement Grinding
+          What could be the cause of repetitive inner race damage ???
+Thanks in advance.
+ "
+Repetitive inner race defect in Motor DE bearing,2018-05-02T04:54:34,ROTATING GUY,"Hi Vidya,
+How many months before the previous failing of inner race was? do you have any monitoring device or just a scheduled monitoring?
+in my previous experience, we get this inner race failure when bearing fit and clearance was not achieve.
+ regards,"
+Repetitive inner race defect in Motor DE bearing,2018-05-02T05:47:30,VIDYA SAGAR,"Hi RG,
+          previous failure was 2 years back and we use SPM instrument for condition monitoring.Does fitment and clearance is the cause for three failures??
+Any Problem due to load ???"
+Repetitive inner race defect in Motor DE bearing,2018-05-02T06:50:17,ROTATING GUY,"Vidya,
+how much is the amount of impacting before this happen? is there a temperature increase before? after that crack when you ovehaul, did the inner race spun on the shaft?
+regards,"
+Repetitive inner race defect in Motor DE bearing,2018-05-02T09:40:05,VIDYA SAGAR,"RG,
+       There is no significant increase in temperature and yes inner race spun on shaft.
+i didn't get what exactly impacts u are asking,whether the load or in TWF??
+ "
+Repetitive inner race defect in Motor DE bearing,2018-05-07T21:32:47,SLEDDER,"Measure the bearing fit on the shaft, maybe it's way over sized."
+Repetitive inner race defect in Motor DE bearing,2018-05-15T05:15:06,ROTATING GUY,"vidya Sagar posted:
+Hi RG,
+          previous failure was 2 years back and we use SPM instrument for condition monitoring.Does fitment and clearance is the cause for three failures??
+Any Problem due to load ???
+Im just curious that this is sudden failure or the failure developed? i doubt at the data collection since this is not sees that will generate fault.
+regards,"
+Vibration at 5X NDE AND DE V for Centrifugal Pump,2018-04-18T12:49:04,WSS,"Vibration was observed in a recently overhauled centrifugal pump in 5X at pump NDE and DE V.FFT is attached
+There is no chance of vane pass effect since the pump was overhauled recently and no damages where observed."
+Vibration at 5X NDE AND DE V for Centrifugal Pump,2018-04-19T11:12:38,DAVE REYNOLDS,"WSS
+Many styles of centrifugal pumps, can you add more detail
+Most of the time, pumps have 2-3 bearings/shaft/impeller/coupling. So if you truly have a 5x peak synchronous to machine running speed and you have 5 vanes on the impeller, then it is vane pass. Bearings will be non-synchronous data
+I also see what appears to be harmonics of vane pass, did you change impeller size recently, is there a check valve or valve in general that is stuck or not working properly?
+Just by ""overhauling"" a pump does not mean it can not have vane pass......."
+Vibration at 5X NDE AND DE V for Centrifugal Pump,2018-04-19T11:58:31,WSS,"The pump was overhauled as a part of routine maintenance ,there was no indication of vibration prior to overhauling.
+LPT was carried out on impeller during overhauling and no damages where observed also when we calibrated the rotor for balancing we found that it was already under tolerance.
+This are the main reasons I ruled out vane pass.
+This horizontally mounted centrifugal pump acts as a overhung rotor,having a bellow in the suction side and connected to motor using a flexible coupling.Pump has 2 angle contact bearing in DE and one radial bearing in NDE.
+I carried out shock pulse test and found bearing pulse to be just under warning range"
+Vibration at 5X NDE AND DE V for Centrifugal Pump,2018-04-20T07:37:39,ROTATING GUY,"WSS
+spectrum wasn't sufficient enough for analysing, if you could provide enveloping and TWF will help to know what is fault.
+ try to run motor alone and gathered the data and check if this frequency arise.
+regards,
+ "
+Vibration at 5X NDE AND DE V for Centrifugal Pump,2018-04-21T12:55:19,DAVE REYNOLDS,"The pump was overhauled as a part of routine maintenance ,there was no indication of vibration prior to overhauling. ok, then it should not be vibrating now right....then something changed...is the pump running backwards, just because the valve handle moved does not mean the internals moved, did something fall/collapse and block pump inlet, are flows and pressure normal, did you change impeller size
+I assume ""calibrated"" means balanced the impeller
+This are the main reasons I ruled out vane pass. I agree that as long as you did not change impeller size or design then there should not be vane pass, but if the suction or discharge of your pump is partially blocked you can see vane pass, it is created by hydraulic issues with pump performance. Like not enough liquid on suction side or restricted piping on discharge due to dirt buildup
+This horizontally mounted centrifugal pump acts as a overhung rotor,having a bellow in the suction side and connected to motor using a flexible coupling.Pump has 2 angle contact bearing in DE and one radial bearing in NDE.
+I carried out shock pulse test and found bearing pulse to be just under warning range shock pulse does not account for vane pass or 1x or 2x, it uses the ultrasonic range to identify faults at an early stage, very sensitive to flow/cavitation/lubrication defects
+https://en.wikipedia.org/wiki/Shock_Pulse_Method
+Dave"
+Vibration at 5X NDE AND DE V for Centrifugal Pump,2018-04-22T05:16:07,WSS,"Thank you guys for your reply.The pump is at site and we are service contractors.So is it safe to conclude that occurrence of vibration is not due to any wrong procedure in overhauling (ie. balancing,Replaced bearings and gasket,mech seal test)? 
+Please note we had changed the bearings too."
+Vibration at 5X NDE AND DE V for Centrifugal Pump,2018-04-28T14:30:38,CHARY TATTA,"Greetings team
+ Very Interesting case. only 5X dominating. No problems noticed in spectrum. All unique components are in good condition.  
+3.84 mm/s at 5X is still in normal condition. However, the cause of 5X dominant can appear due to flow conditions like impeller stall. 
+ Check the pump suction and delivery valves, system flow conditions (full flow or throttled flow) Load on motor etc.,
+Pleased to see such isolated case.
+ regards
+Chary
+ "
+Vibration at 5X NDE AND DE V for Centrifugal Pump,2018-04-29T07:25:27,WSS,"Dear Mr.Chary,
+Its 4.8mm/s now.We are planing to take it down once it peaks over  5.5mm/s and give a check of the valves and other flow condition.The check valve on discharge line is normally on full open or full closed condition."
+Vibration at 5X NDE AND DE V for Centrifugal Pump,2018-04-29T15:30:25,CHARY TATTA,"GREETINGS
+WELL NOTED. 
+THANKS FOR YOUR FEEDBACK.
+PLEASE FOLLOW THIS METHOD AND TRY HOW YOUR VIBRATIONS ARE INDICATING.
+1. CLOSE DISCHARGE VALVE AND START THE PUMP AFTER FEW SECONDS AT FULL SPEED AT MAXIMUM PRESSURE MEASURE THE VIBRATION SLOWLY OPEN DISCHARGE VALVE AND MEASURE THE VIBRATION. 
+IF FLOW INCREASING TIME VIBRATION RISING IT IS RELATED TO FLOW SURGES CAUSING THE VIBRATION. IF STEADY AT EVERY DISCHARGE VALVE POSITION THEN THE VIBRATION IS NOT FLOW RELATED.
+ALSO TAKE RUN UP AND COAST DOWN AND RECORD RESONANCE FREQUENCY.
+BUMP TEST ALSO HELPS BUT RUN UP/COAST DOWN IS BETTER.
+APPRECIATE YOUR FEEDBACK.
+ REGARDS
+CHARY
+ "
+High Vibration on bearing #2 and #3 on gas Turbine frame 9E (100 MW),2018-04-03T15:03:27,AHMAD ALFAKEER,"Dear all 
+We have an issue  high vibration on BRG #2&3 ,  finish the Major Inspection on this unit when we start the unit , at FSNL ( 3000 RPM ) the vibration for BRG # 2&3 stable not exceed (6 mm/s ) , when the unit is loaded the vibration increase on BRG 2&3 Only , at full load the Vibration reach on BRG # ( 9- 13 mm/s fluctuating ) and BRG #3 ( 7- 8.5 mm/s ) , and in the MI inspection we made casing Alignment as recommended from  manufacturer GE because when open the unit we found the BRG # 2 is damage from Upper haif and BRG # 3 is damage on lower haif and there is oval on AFT compressor casing and before open unit the vibration on BRG # 2 reached ( up to 19mm/s ) , all bearing replaced BY new ones and the vibration still , please to advice me to know what is the cause of vibration .
+note : all vibration on BRG # 4 & 5 are smooth not exceed  (2mm/s )at Full load 
+thanks in advance "
+High Vibration on bearing #2 and #3 on gas Turbine frame 9E (100 MW),2018-04-09T17:04:12,AHMAD ALFAKEER,"Ahmad alfakeer posted:
+Dear all 
+We have an issue  high vibration on BRG #2&3 ,  finish the Major Inspection on this unit when we start the unit , at FSNL ( 3000 RPM ) the vibration for BRG # 2&3 stable not exceed (6 mm/s ) , when the unit is loaded the vibration increase on BRG 2&3 Only , at full load the Vibration reach on BRG # ( 9- 13 mm/s fluctuating ) and BRG #3 ( 7- 8.5 mm/s ) , and in the MI inspection we made casing Alignment as recommended from  manufacturer GE because when open the unit we found the BRG # 2 is damage from Upper haif and BRG # 3 is damage on lower haif and there is oval on AFT compressor casing and before open unit the vibration on BRG # 2 reached ( up to 19mm/s ) , all bearing replaced BY new ones and the vibration still , please to advice me to know what is the cause of vibration .
+note : all vibration on BRG # 4 & 5 are smooth not exceed  (2mm/s )at Full load 
+thanks in advance 
+please to help me ???"
+High Vibration on bearing #2 and #3 on gas Turbine frame 9E (100 MW),2018-04-10T11:51:24,NGO DINH,"First, I think you should give us some data (APHT trend, waterfall, SCL, orbit... if any)for review and also the arrangement of machine. I do not know where is bearing#2 or 3 and so on. 
+You said that the casing have done bore alignment due to center of bearing housing 2 and 3 is not coincided. How about the alignment result and how about the rotor center position check (done at some hole on casing). how about labyrinth clearance at both side of bearing? how about the phase?"
+Carbon ring seal used for integrally geared centrifugal compressor,2018-03-19T16:16:43,LUX,"Dear Friends,
+Anyone had the expience of carbon ring seal used for centrifugal compressor and would like to give me some comments on the following issues.
+In these years we always experienced many issues of carbon ring seals on our integrally geared centrifugal compressors. The main issues on the carbon ring seals are as follows:
+Broken detent pinè then carbon ring was rotated together shaft in the seal housing.
+The lip seal of carbon seal is completely worn out and subsequently the carbon ring was stuck at this positionè cannot float so as to result in high vibration.
+Stuck carbon ring in the seal housingè then uneven wear on the carbon ring è finally resulted in machine trip caused by high vibration.
+Worn detent pin hole on the carbon ringè then carbon ring was unable to freely float in the seal housingè finally resulted in rubbing with shaft and consequent machine high vibration trip.
+These pictures of current carbon seals are attached below for your reference. .
+I don’t find any information of the damaged carbon seal in the compressor manual, but I saw the following description of carbon seals in the manual of another compressor that the attention must be paid to be direction dependent position of the detent pins and from the picture, it looks like the detent pin position should be set at horizontal direction but not like our current mounting position that the detent pin is put at basically vertical direction with an angle offset of 11.5 degrees towards left or right.
+Could you kindly help on the following questions:
+The detent pin must be put at horizontal direction ( 3’ clock or 6’ clock)? -----If this is necessary during the mounting, then could you kindly tell me what the real reason is ?
+The detent pin must be depended on the shaft rotation direction? ----If this is necessary during the mounting, then could you kindly tell me what the real reason is?
+What is a proper length of the detent pin? Because we always find that the pin is broken or worn, we have to machine some pins for the mounting of new carbon ring during the urgent cases. It is better if you can tell me the actual requirement on the length of the detect pin.
+We also have carbon ring (from your company) designed on the Siemens compressors, but till now we haven’t experienced any issues on these machines. I believe the current issue should be caused by some reasons besides carbon seal self, such as carbon seal installation….. Could you kindly teach me that details should be well followed during the actual installation, otherwise it will be able to cause those issues mentioned above.
+  Your kind help on my questions will be very appreciated. Looking forward to seeing your reply"
+1X AC line frequency excitation in Motor,2018-02-03T15:23:27,THE MANIAC,"A centrifugal fan 168 kW, 1480 RPM Overhung with Flexible pin bush coupling was running normal with vibration max 3 mm/s since 4 years. There was a sudden increase in vibration at 2x RPM frequency up to 8 mm/s inin coupled condition at motor NDE side Horizontal and fan NDE vibration observed max 3.6 mm/s with minor looseness symptoms . Motor Solo run was taken and observed with 1x Line frequency(49.97 Hz) observed dominant in spectrum with vibration observed up to 3.4 mm/s in motor NDE horizontal. Motor was observed with humming sound in solo run. During the coast down Water Fall spectrum data was taken and found that the line frequency disappeared immediately after power cut-off. what could be the possible source of excitation of 1x Line frequency?"
+1X AC line frequency excitation in Motor,2018-02-05T09:23:26,ROTATING GUY,"Hi,
+Could you please send more details like FFT, TWF on what your are telling on your post.
+regards,"
+1X AC line frequency excitation in Motor,2018-02-06T06:22:23,THE MANIAC,"Pls find the attachment for spectrum and wave form attached
+ "
+Primary air fan High vibration in Motor DE brg.,2017-06-16T17:05:53,TUSHAR000001,"PA Fan Motor DE vibration : 20 microns/10.5mm/sec
+Spectrum attached ,peakvue shows BPFO faults frequency"
+Primary air fan High vibration in Motor DE brg.,2017-06-16T17:08:22,TUSHAR000001,"my query is:
+1. what is the stage of failure of bearing?
+2. Should we change the bearing ?
+Motor is squirrel cage induction motor ,6.6 Kv
+Bearing on DE side: SKF NU230"
+Primary air fan High vibration in Motor DE brg.,2017-06-19T12:49:07,TUSHAR000001,why no one is replying? is this forum no more active?
+Primary air fan High vibration in Motor DE brg.,2018-01-12T06:50:45,ROTATING GUY,"do you have TWF data? if any please provide.
+regards,"
